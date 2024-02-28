@@ -36,4 +36,3 @@ e utilize o **usuario: admin - senha: 123456**, ou caso preferir, adicione um no
 ### 💾 Tecnologias Usadas
 * [PHP](https://www.php.net)
 * [JQuery](https://jquery.com)
->>>>>>> 3e3df92c4a0e2650132e1dc3c54397de09612b9e
