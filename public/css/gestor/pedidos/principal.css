@@ -1,0 +1,159 @@
+.pedidos-estados{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.novos,
+.producao,
+.pronto,
+.entregues{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.nome-estado{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.nome-estado i{
+    margin-right: 5px;
+}
+
+.novos .nome-estado{
+    background-color: #FC8D43;
+}
+
+.producao .nome-estado{
+    background-color: #FDB742;
+}
+
+.pronto .nome-estado{
+    background-color: #42FD75;
+}
+
+.entregues .nome-estado{
+    background-color: #4396FC;
+}
+
+.pedidos-container{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ECF0F1;
+    min-height: 400px;
+    height: auto;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+.pedido{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.10);
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.dados-cliente,
+.dados-pedido{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    background: rgba(250, 250, 250, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.dados-cliente h4,
+.dados-pedido h4{
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.produto-pedido{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.produto-pedido h5{
+    align-self: self-start;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    background-color: rgba(250, 250, 250, 0.8);
+}
+
+.botoes-acoes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.botoes-acoes input[type="button"]{
+    width: 160px;
+    height: 40px;
+    margin: 2.5px 2.5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.confirmar-pedido,
+.btn-pronto,
+.entregue,
+.baixa{
+    background: #42FD75;
+}
+
+.cancelar-pedido{
+    background: #FD4263;
+}
+
+.imprimir,
+.imprimir-cozinha{
+    background: darkgrey;
+}
+
+.separador-pedido{
+    height: 30px;
+}
+
+@media(max-width: 420px){
+    .botoes-acoes{
+        justify-content: center;
+    }
+
+    .botoes-acoes a{
+        width: 100%;
+        padding-right: 5px;
+    }
+
+    .botoes-acoes input[type="button"]{
+        width: 100%;
+    }
+}

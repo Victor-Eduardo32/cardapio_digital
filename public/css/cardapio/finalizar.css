@@ -1,0 +1,412 @@
+form.finalizar-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    overflow: auto;
+    font-family: 'kanit', sans-serif;
+}
+
+div.retornar{
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+div.retornar a{
+    display: flex;
+    align-items: center;
+    width: 5%;
+    text-decoration: none;
+    color: azure;
+}
+
+div.retornar i{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+div.retornar p{
+    cursor: pointer;
+}
+
+.finalizar-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: azure;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dados-cliente-container{
+    width: 96%;
+    margin-top: 10px;
+}
+
+.nome-cliente,
+.telefone-cliente{
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.nome-cliente input[type="text"],
+.telefone-cliente input[type="text"]{
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+}
+
+.opcoes-entrega{
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 20px;
+}
+
+.tipo-entrega{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-entrega,
+.btn-retirar{
+    width: 48%;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.inativo{
+    background: azure;
+}
+
+.ativo{
+    background: #4CAF50;
+    color: azure;
+}
+
+.endereco-container{
+    display: none;
+    width: 96%;
+    margin-top: 10px;
+}
+
+.ed-bairro,
+.ed-rua,
+.ed-referencia{
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.ed-bairro select{
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.input-group{
+    margin-top: 5px;
+    width: 100%;
+}
+
+.input-group input[type="text"]{
+    border: none;
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+}
+
+.input-group input[type="number"]{
+    border: none;
+    width: 19.5%;
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.input-group input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.ed-referencia input[type="text"]{
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+}
+
+.pagamento-container{
+    display: none;
+    padding: 25px;
+    padding-top: 20px;
+    width: 99%;
+    height: 100%;
+}
+
+.preco-container{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.preco-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.preco-info h5,
+.preco-info p{
+    font-size: 17px;
+}
+
+.tipo-pagamento{
+    margin: 10px 0;
+}
+
+.apresentacao-pagamento h4{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.apresentacao-pagamento h5{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.apresentacao-pagamento p{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.escolha-pagamento{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.btn-dinheiro,
+.btn-cartao{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: none;
+    width: 50%;
+    height: 65px;
+    font-size: 20px;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.btn-dinheiro i{
+    width: 40px;
+    font-size: 30px;
+}
+
+.btn-cartao i{
+    width: 50px;
+    font-size: 30px;
+}
+
+.troco-dinheiro{
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.troco-dinheiro h4{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.selecionar-troco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sem-troco,
+.com-troco{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.troco-nao,
+.troco-sim{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #c6c6c6;
+    outline: none;
+    border-radius: 50%;
+    background: azure;
+    border: 4px solid #2f2f2f;
+}
+
+.troco-nao:checked,
+.troco-sim:checked{
+    background: azure;
+}
+
+.troco-nao:checked::before,
+.troco-sim:checked::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: #5dd561; 
+    border-radius: 50%;
+}
+
+.tipo-cartao{
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 7px;
+}
+
+.tipo-cartao h4{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.tipo-cartao select{
+    width: 100%;
+    height: 50px;
+    margin-top: 7px;
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.quantidade-troco{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.quantidade-troco label{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.quantidade-troco input[type="number"]{
+    border: none;
+    width: 19.5%;
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+div.separador{
+    height: 150px;
+}
+
+div.concluir-pedido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95px;
+    background-color: azure;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+}
+
+div.concluir-pedido .concluir{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 98%;
+    height: 60px;
+    color: azure;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    margin-top: 10px;
+    bottom: 0;
+    padding-left: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.concluir i{
+    margin: 0 10px;
+}
+
+@media(max-width: 925px){
+    .input-group input[type="text"]{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .input-group input[type="number"]{
+        width: 185px;
+    }
+}

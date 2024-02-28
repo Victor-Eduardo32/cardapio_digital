@@ -1,0 +1,233 @@
+::-webkit-input-placeholder{
+    color: #000;
+}
+
+.campos-dados-complemento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    background-color: azure;
+    padding: 15px;
+    z-index: 2;
+}
+
+.campos-dados-complemento h4{
+    padding-bottom: 5px;
+    font-size: 25px;
+    border-bottom: 1px solid#C0C0C0;
+    width: 90%;
+}
+
+.campos-dados-complemento p{
+    font-size: 13.5px;
+    background: #cdcdcd;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 3px;
+    width: 90%;
+}
+
+.retornar-add-complemento,
+.retornar-edit-complemento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 265px;
+    height: 10%;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.retornar-add-complemento i,
+.retornar-edit-complemento i{
+    margin-right: 5px;
+}
+
+.retornar-add-complemento p,
+.retornar-edit-complemento p{
+    background: azure;
+}
+
+.form-group-complemento{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    border-bottom: 1px dashed #C0C0C0;
+    padding: 10px;
+}
+
+.form-group-complemento .form-label{
+    display: inline-block;
+    margin-right: 20px;
+    width: 15%;
+}
+
+.form-group-complemento .form-input{
+    width: 80%;
+    height: 40px;
+    padding: 8px 15px;
+    font-size: 14px;
+    border: 1px solid #000;
+}
+
+.corpo-itens{
+    width: 90%;
+}
+
+.item{
+    display: flex;
+    width: 100%;
+}
+
+.campo-item{
+    width: 100%;
+}
+
+.acoes-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+}
+
+.remover-complemento{
+    background-color: azure;
+    border: 1px solid #FD4263;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    cursor: pointer;
+    transition: 1s all;
+    margin: 5px 0 5px 10px;
+}
+
+.remover-complemento:hover{
+    background-color: #FD4263;
+    color: azure;
+}
+
+.inativar-ativar-complemento{
+    background-color: azure;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    cursor: pointer;
+    transition: 1s all;
+    margin: 5px 0 5px 10px;
+}
+
+.inativar-ativar-complemento.inativar{
+    color: #000;
+    border: 1px solid #000;
+}
+
+.inativar-ativar-complemento.inativar:hover{
+    color: azure;
+    background-color: #000;
+}
+
+.inativar-ativar-complemento.ativar{
+    color: #34d25e;
+    border: 1px solid #34d25e;
+}
+
+.inativar-ativar-complemento.ativar:hover{
+    color: azure;
+    background-color: #34d25e;
+}
+
+.separador-complemento{
+    background: #C0C0C0;
+    border-radius: 10px;
+    height: 10px;
+    width: 1090px;
+    margin: 10px 0;
+}
+
+.adicionar-novo-complemento{
+    width: 90%;
+}
+
+.adiciona-complemento{
+    float: left;
+    background-color: azure;
+    border: 1px solid #42FD75;
+    border-radius: 5px;
+    width: 160px;
+    height: 35px;
+    cursor: pointer;
+    transition: 1s all;
+    margin: 15px 925px 0 0;
+}
+
+.adiciona-complemento:hover{
+    background-color: #42FD75;
+    color: azure;
+}
+
+.criar-complemento,
+.editar-complemento{
+    height: 35px;
+    width: 90%;
+    border: 2px solid #FD4263;
+    border-radius: 5px;
+    background: azure;
+    color: rgb(252, 90, 90);
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: 400;
+    transition: 1s all;
+    margin-bottom: 50px;
+}
+
+.criar-complemento:hover,
+.editar-complemento:hover{
+    background: #FD4263;
+    border: 2px solid azure;
+    color: azure;
+}
+
+@media(max-width: 900px){
+    .form-group-complemento{
+        flex-direction: column;
+    }
+
+    .form-group-complemento .form-label{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .form-group-complemento .form-input{
+        width: 100%;
+    }
+
+    .form-group-complemento .check-disponivel{
+        width: 60px;
+    }
+    
+    .remover-item{
+        display: flex;
+        align-items: center;
+    }
+
+    .campo-item .form-group-complemento{
+        width: 100%;
+    }
+}
+
+@media(max-width: 840px){
+    .retornar-add-complemento,
+    .retornar-edit-complemento{
+        width: 100%;
+    }
+}
+

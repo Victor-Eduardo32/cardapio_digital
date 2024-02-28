@@ -1,0 +1,156 @@
+.conteudo-entregas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.add-entregas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top: 150px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.add-entregas input[type="button"]{
+    width: 100px;
+    height: 35px;
+    border: 1px solid #FD4263;
+    border-radius: 5px;
+    background: azure;
+    color: rgb(252, 90, 90);
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.add-entregas input[type="button"]:hover{
+    background: #FD4263;
+    border: 1px solid azure;
+    color: azure;
+}
+
+.entregas{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    overflow: auto;
+    margin-bottom: 80px;
+}
+
+.entregas table{
+    width: 100%;
+}
+
+.entregas table tr{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.entregas th,
+.entregas td{
+    width: 25%;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.entregas td{
+    height: 45px;
+}
+
+.entregas .id-entrega{
+    width: 10%;
+}
+
+.entregas .nome-bairro{
+    text-align: left;
+    width: 40%;
+}
+
+.acao-btn{
+    text-decoration: none;
+}
+
+.botao-entrega{
+    height: 25px;
+    width: 60px;
+    background-color: azure;
+    border-radius: 3px;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+.botao-entrega.editar{
+    border: 2px solid #42fd74;
+}
+
+.botao-entrega.editar:hover{
+    background-color: #42FD75;
+    color: azure;
+}
+
+.botao-entrega.excluir{
+    border: 2px solid #FD4263;
+}
+
+.botao-entrega.excluir:hover{
+    background-color: #FD4263;
+    color: azure;
+}
+
+@media(max-width: 1020px){
+    .entregas{
+        flex-direction: column;
+    }
+
+    .entregas table thead{
+        display: none;
+    }
+
+    .entregas table tr{
+        align-items: flex-start;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        background: #f2f2f2;
+        margin-bottom: 10px;
+    }
+
+    .entregas table tr td{
+        width: 100%;
+    }
+
+    .entregas table tr td.id-entrega{
+        width: 100%;
+    }
+
+    .entregas table tr td.nome-bairro{
+        text-align: center;
+        width: 100%;
+    }
+
+    .entregas table tr td.botoes-entrega{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 5px;
+    }
+
+    .entregas table tr td.botoes-entrega a{
+        width: 100%;
+    }
+
+    .entregas table tr td.botoes-entrega input{
+        width: 100%;
+    }
+
+    .entregas table tr td:last-child{
+        border-bottom: none;
+    }
+}

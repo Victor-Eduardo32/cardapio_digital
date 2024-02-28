@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'kanit', sans-serif;
+}
+
+:root{
+    --primary-color: #B22222;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w33{
+    width: 33.3%;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Estilização do site */
+
+body, html{
+    height: 100%;
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+

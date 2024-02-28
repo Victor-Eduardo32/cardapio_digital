@@ -1,0 +1,36 @@
+<a href="?url=categorias" class="retornar-add-categoria">
+    <i class="fa-solid fa-arrow-left"></i>
+    <p>Voltar</p>
+</a><!--retornar-->
+
+<form class="campos-dados-categoria" action="../../controller/gestor/categoria/adicionar.php" method="post">
+    
+    <h4>Adicionar Categoria</h4>
+    <div class="form-group-categoria">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" name="nome" class="form-input nome-categoria" placeholder="Nome da Categoria" require>
+    </div><!--form-group-categoria-->
+    <div class="form-group-categoria">
+        <label for="ordem" class="form-label">Ordem</label>
+        <input type="number" name="ordem" class="form-input ordem-categoria" placeholder="Ordem da Categoria" require>
+    </div><!--form-group-categoria-->
+    <p>Deixe a opção "sempre disponível" ligada caso deseje deixar disponível durante todo o funcionamento do estabelescimento, caso contrário, defina o horário com a opção desligada.</p>
+    <div class="form-group-categoria">
+        <label for="hora-inicial" class="form-label">Horário Inicial</label>
+        <input type="text" name="hora-inicial" class="form-input hora-inicial" placeholder="00:00" onfocus="this.type='time'" onblur="this.type='text'">
+    </div><!--form-group-categoria-->
+    <div class="form-group-categoria">
+        <label for="hora-final" class="form-label">Horário Final</label>
+        <input type="text" name="hora-final" class="form-input hora-final" placeholder="23:59" onfocus="this.type='time'" onblur="this.type='text'" >
+    </div><!--form-group-categoria-->
+    <div class="form-group-categoria">
+        <label for="sempre-disponível" class="form-label">Sempre disponível</label>
+        <input type="checkbox" name="disponivel" class="form-input check-disponivel" checked>
+    </div><!--form-group-categoria-->
+    <div class="form-group-categoria upload">
+        <label for="" class="form-label">Icone</label>
+        <input type="url" name="icone" accept="image/png" class="form-input" placeholder="https://">
+    </div><!--form-group-categoria upload-->
+    
+    <input type="submit" value="Criar Categoria" class="criar-categoria"> 
+</form>

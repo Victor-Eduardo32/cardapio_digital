@@ -1,0 +1,160 @@
+.conteudo-complementos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.add-complemento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top: 150px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.add-complemento input[type="button"]{
+    width: 100px;
+    height: 35px;
+    border: 1px solid #FD4263;
+    border-radius: 5px;
+    background: azure;
+    color: rgb(252, 90, 90);
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.add-complemento input[type="button"]:hover{
+    background: #FD4263;
+    border: 1px solid azure;
+    color: azure;
+}
+
+.complementos{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    overflow: auto;
+    margin-bottom: 80px;
+}
+
+.complementos table{
+    width: 100%;
+}
+
+.complementos table tr{
+    display: flex;
+}
+
+.complementos table tr th,
+.complementos table tr td{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.complementos table tr td{
+    height: 45px;
+}
+
+.complementos .id-complemento{
+    width: 10%;
+}
+
+.complementos .nome-complemento{
+    width: 35%;
+}
+
+.botao-complemento{
+    height: 25px;
+    width: 60px;
+    background-color: azure;
+    border-radius: 3px;
+    transition: 1s ease;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.botao-complemento.editar{
+    border: 2px solid #42fd74;
+}
+
+.botao-complemento.editar:hover{
+    background-color: #42FD75;
+    color: azure;
+}
+
+.botao-complemento.duplicar{
+    border: 2px solid #6959CD;
+}
+
+.botao-complemento.duplicar:hover{
+    background-color: #6959CD;
+    color: azure;
+}
+
+.botao-complemento.excluir{
+    border: 2px solid #FD4263;
+}
+
+.botao-complemento.excluir:hover{
+    background-color: #FD4263;
+    color: azure;
+}
+
+@media(max-width: 1020px){
+    .complementos{
+        flex-direction: column;
+    }
+
+    .complementos table thead{
+        display: none;
+    }
+
+    .complementos table tr{
+        align-items: flex-start;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        background: #f2f2f2;
+        margin-bottom: 10px;
+    }
+
+    .complementos table tr td{
+        width: 100%;
+    }
+
+    .complementos table tr td.id-complemento{
+        width: 100%;
+    }
+
+    .complementos table tr td.nome-complemento{
+        width: 100%;
+    }
+
+    .complementos table tr td.botoes-complemento{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 5px;
+    }
+
+    .complementos table tr td.botoes-complemento a{
+        width: 100%;
+    }
+
+    .complementos table tr td.botoes-complemento input{
+        width: 100%;
+    }
+
+    .complementos table tr td:last-child{
+        border-bottom: none;
+    }
+}

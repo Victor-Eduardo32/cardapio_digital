@@ -1,0 +1,19 @@
+.pedidos-cliente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.pedido{
+    height: auto;
+    width: 100%;
+    background: azure;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 18px;
+    word-break: break-all;
+}

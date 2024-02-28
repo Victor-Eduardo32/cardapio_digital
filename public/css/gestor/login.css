@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'kanit', sans-serif;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+section.login-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fc3a3a;
+    height: 100vh;
+}
+
+.apresentacao-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.apresentacao-login h2{
+    font-size: 35px;
+    color: azure;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.apresentacao-login img{
+    margin-top: 50px;
+    width: 450px;
+    transform: rotate(5deg);
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    margin-right: 150px;
+    background-color: #B22222;
+    border-radius: 15px;
+    padding-bottom: 15px;
+}
+
+.login h4{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: azure;
+    font-size: 35px;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login form label{
+    margin-bottom: 15px;
+    color: azure;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login form input{
+    width: 400px;
+    height: 55px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.login form input[type="submit"]{
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 0;
+    transition: 1s ease;
+}
+
+.login form input[type="submit"]:hover{
+    margin-bottom: 0;
+    margin-top: 10px;
+    background: #fc3a3a;
+    color: azure;
+    cursor: pointer;
+}

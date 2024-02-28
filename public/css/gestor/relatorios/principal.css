@@ -1,0 +1,187 @@
+.conteudo-relatorios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    overflow: auto;
+}
+
+.relatorio-topo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.relatorio-topo h3{
+    font-size: 23px;
+}
+
+.data-relatorios{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.data-relatorios div{
+    display: flex;
+    align-items: center;
+}
+
+.data-relatorios div h5{
+    margin-right: 30px;
+}
+
+.data-relatorios div input[type='datetime-local']{
+    width: 300px;
+    padding: 8px 16px;
+    border: 1px solid #000;
+}
+
+.data-relatorios input[type="submit"]{
+    width: 150px;
+    border: 1px solid #FD4263;
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.data-relatorios input[type="submit"]:hover{
+    background: #FD4263;
+    color: azure;
+}
+
+.dados-relatorios{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.dados-relatorios h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.dados-relatorios p{
+    margin: 5px 0;
+}
+
+.dados-relatorios i{
+    float: right;
+    cursor: pointer;
+    font-size: 15px;   
+}
+
+.info-pedidos,
+.info-faturamento,
+.info-clientes{
+    height: 250px;
+    width: 30%;
+    color: azure;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.info-pedidos{
+    background-color: tomato;
+}
+
+.info-faturamento{
+    background: darkslategray;
+}
+
+.info-clientes{
+    background: darkslategray;
+    overflow: auto;
+}
+
+.cliente{
+    display: none;
+    background: rgb(32, 51, 51);
+    padding: 10px;
+}
+
+.info-categorias,
+.info-bairros{
+    height: 250px;
+    width: 45%;
+    color: azure;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+.info-categorias{
+    background: limegreen;
+}
+
+.info-bairros{
+    background: darkslategray;
+}
+
+.info-produto-categorias{
+    display: none;
+    background: rgba(0,0,0,0.1);
+    padding: 5px;
+}
+
+.separador-relatorio{
+    height: 30px;
+}
+
+@media(max-width: 1020px){
+    .data-relatorios{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 10px
+    }
+
+    .data-relatorios div{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .data-relatorios div h5{
+        width: 75px;
+    }
+    
+    .data-relatorios div input[type='datetime-local']{
+        width: 50%;
+        padding: 8px 16px;
+    }
+    
+    .data-relatorios input[type="submit"]{
+        width: 60%;
+        height: 30px;
+    }
+
+    .dados-relatorios{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0 20px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+
+    .info-pedidos,
+    .info-faturamento,
+    .info-clientes,
+    .info-categorias,
+    .info-bairros{
+        width: 100%;
+    }
+
+}

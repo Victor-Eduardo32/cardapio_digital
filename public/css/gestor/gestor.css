@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'kanit', sans-serif;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+/* Gestor Principal */
+
+div.gestor{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+section.nav-gestor-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: #B22222;
+    z-index: 3;
+}
+
+.logo-gestor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    padding: 15px;
+}
+
+.logo-gestor img{
+    width: 100px;
+}
+
+.logo-gestor i{
+    font-size: 45px;
+    color: azure;
+    cursor: pointer;
+}
+
+.nav-gestor{
+    display: none;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.nav-gestor ul{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.nav-gestor a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 23px;
+    text-transform: uppercase;
+    transition: 1s all;
+}
+
+.nav-gestor a:hover{
+    text-decoration: underline;
+    padding-left: 10px;
+}
+
+.btn-cardapio{
+    display: none;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.btn-cardapio a{
+    width: 45%;
+}
+
+.btn-cardapio input[type="button"]{
+       width: 100%;
+       height: 35px;
+       font-size: 13px;
+       background: azure;
+       text-transform: capitalize;
+}
+
+section.conteudo-gestor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: #fc3a3a;
+}
+
+.interior{
+    width: 100%;
+    height: 100%;
+    background: azure;
+}
+
+.none{
+    display: none;
+}

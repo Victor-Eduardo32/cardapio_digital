@@ -1,0 +1,98 @@
+/* Corpo da Página de Contato */
+
+section.contato-container{
+    width: 100%;
+    height: 100%;
+}
+
+.background-container{
+    position: absolute;
+    background: url('https://www.sabornamesa.com.br/media/k2/items/cache/bf1e20a4462b71e3cc4cece2a8c96ac8_XL.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.overlay-contato{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(84, 84, 84, 0.6);
+    z-index: 2;
+}
+
+form.contato{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+form.contato input{
+    margin-top: 10px;
+}
+
+form.contato input[type="text"]{
+    width: 500px;
+    height: 80px;
+    padding: 10px;
+    font-size: 25px;
+    border-color: #fc3a3a;
+}
+
+form.contato input[type="submit"]{
+    width: 500px;
+    height: 50px;
+    border: none;
+    background: #fc3a3a;
+    color: azure;
+    font-size: 25px;
+    transition: 1s ease;
+}
+
+form.contato input[type="submit"]:hover{
+    width: 510px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+form.contato textarea{
+    width: 500px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 25px;
+    resize: vertical;
+    border-color: #fc3a3a;
+}
+
+footer{
+    background: var(--primary-color);
+    margin-top: 0;
+    color: azure;
+}
+
+@media(max-width: 525px){
+    form.contato input[type="text"]{
+        width: 350px;
+        height: 70px;
+    }
+
+    form.contato textarea{
+        width: 350px;
+    }
+
+    form.contato input[type="submit"]{
+        width: 350px;
+    }
+
+    form.contato input[type="submit"]:hover{
+        width: 360px;
+    }
+}
