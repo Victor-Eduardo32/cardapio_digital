@@ -1,0 +1,1 @@
+Nosso objetivo é criar um cardápio digital de uma loja, visando melhorar seu atendimento ao cliente de forma prática e rápida. Separamos em containers cada parte do cardápio para ficar de forma clara para o cliente, assim como a logo é algo mais amigável visando uma diversificação e inovação.
